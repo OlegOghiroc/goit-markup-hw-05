@@ -80,6 +80,17 @@ ul {
   border-radius: 2px;
   background-color: var(--accent-color);
 }
+.nav-link::after:hover {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
 
 /* site-contact */
 .site-contact {
@@ -201,6 +212,7 @@ ul {
   border: none;
   background-color: var(--accent-color);
   border-radius: 4px;
+  cursor: pointer;
 
   font-family: Roboto, sans-serif;
   font-weight: 700;
@@ -218,43 +230,17 @@ ul {
   background-color: var(--accent-color);
 }
 
-/* == Modal == */
-
-.backdrop {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.backdrop.is-hiden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 528px;
-  height: 581px;
-  transform: translate(-50%, -50%);
-
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-/* 
 .close-modal-button {
-  position: fixed;
+  position: absolute;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
   right: 8px;
   top: 8px;
   width: 30px;
   height: 30px;
+  cursor: pointer;
 
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -262,11 +248,8 @@ ul {
 }
 
 .close-modal-button-icon {
-  position: fixed;
   display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+}
 
 /* ========Title======== */
 .title,
@@ -756,4 +739,35 @@ ul {
 }
 .footer-social-list-item + .footer-social-list-item {
   margin-left: 10px;
+}
+
+/* == Modal == */
+
+.backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  transform: translate(-50%, -50%);
+
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
