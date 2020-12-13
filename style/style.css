@@ -748,6 +748,10 @@ ul {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-social-icons {
+  fill: #ffffff;
+}
+
 .footer-social-list-link:hover,
 .footer-social-list-link:focus {
   background-color: var(--accent-color);
