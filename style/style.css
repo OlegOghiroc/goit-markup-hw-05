@@ -160,9 +160,11 @@ ul {
 
 /* hero */
 .section-hero {
-  width: 1600px;
-  height: 600px;
+  max-width: 1600px;
   margin: auto;
+  padding-top: 200px;
+  padding-bottom: 280px;
+
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -205,11 +207,6 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-}
-
-.section-hero_conteiner {
-  padding-top: 200px;
-  padding-bottom: 280px;
 }
 
 .order-button {
@@ -274,6 +271,10 @@ ul {
 }
 
 /* company description */
+.company-description_section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .icon-conteiner {
   max-width: 270px;
@@ -324,8 +325,6 @@ ul {
 .company-description_list {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 94px;
-  padding-bottom: 83px;
 }
 
 .company-description_items {
@@ -337,10 +336,12 @@ ul {
 }
 
 /* what we do */
+.what-we-do {
+  padding-bottom: 94px;
+}
 
 .what-we-do_list {
   display: flex;
-  padding-bottom: 94px;
   margin-top: 50px;
   justify-content: space-between;
 }
@@ -392,13 +393,14 @@ ul {
 
 /* our team */
 .our-team_section {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background: #f5f4fa;
 }
 
 .our-team_list {
   display: flex;
-  padding-top: 50px;
-  padding-bottom: 94px;
+  margin-top: 50px;
 }
 
 .our-team_items {
@@ -483,7 +485,7 @@ ul {
 }
 
 /* our-clientses */
-.our-clients-conteiner {
+.our-clients-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -524,8 +526,7 @@ ul {
 
 /* Портфоліо */
 /* choice section */
-
-.choice-section_conteiner {
+.choice-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -671,14 +672,15 @@ ul {
 
 /* footer */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: #2f303a;
 }
 
 .footer_conteiner {
   display: flex;
   align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 /* logo-link */
